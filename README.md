@@ -3,6 +3,7 @@
 ## Summary
 
 ## Link
+[Google Sheets Link](https://docs.google.com/spreadsheets/d/1DvhrLep1nabllAitCjjyU-hWRhmvtgHPQNbjLVhp1PI/edit?usp=sharing)
 
 ## Code
 The most relevant chunks of code are the functions that exclude "Seldom" and contribute to the HTML formatting, as well as the function that adds a new tab to the menu.
