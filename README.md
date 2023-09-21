@@ -1,6 +1,17 @@
 # MGT3745_HW4
 
 ## Summary
+In short, the code works in three main steps: adding menu buttons to the user homescreen, filtering data according to standards, and displaying the new filtered data in a sidebar. 
+
+I start my code with a **"filteredData"** function that I can later call on. In order to make this function work, I first use certain commands to get data from the spreadsheet and move it into arrays that I can later manipulate, transcribe, and otherwise work this. This array is named *data*. I then use a filter function to filter through the data array row by row. I created a new variable *filteredData* that was populated with the rows of the first array where the second column, located at index 1, did not equal "Seldom". This section of the code went through each line row by row, checked for "Seldom" in the appropiate spot, and only returned the row into the new array if "Seldom" was *not* there. 
+
+After this I created a second file, Index.html. This file held the ability to create and format a table using a loop. In order to turn my filtered array, currently stored in filteredData, into a readable table, I created a template from the html file, assigned the filteredData arry to the data variable in the html file, and let the file read the array and, row by row, format into a table with headers. Using the *evaluate* function I pulled the formatted html table and stored in a variable *sidebar*.
+
+Using a user interface command I display sidebar on the screen. 
+
+Now that filteredData is completely defined, I made adjustments to the menu. I made a function which had a variable that stored my changes, added a tab called "MGT3745", and then added an item under that tab in dropdown form called "Filtered Data", that I associated with the function "filteredData", so that is the dropdown item was clicked the function would run. I added these changes to the user interface too. 
+
+The final step was setting a function that would automatically change the menu upon opening the file. 
 
 ## Link
 [Google Sheets Link](https://docs.google.com/spreadsheets/d/1DvhrLep1nabllAitCjjyU-hWRhmvtgHPQNbjLVhp1PI/edit?usp=sharing)
